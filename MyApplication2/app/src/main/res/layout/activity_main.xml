@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#fadcaa"
+    android:orientation="vertical"
+    android:padding="70dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+
+        android:layout_width="229dp"
+        android:layout_height="41dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:text="@string/grade_calculator"
+        android:textColor="#794c74"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/quiz"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:hint="@string/quizzes_15"
+        android:textColor="#429E9B"
+        android:textColorHighlight="#429E9B"
+        android:importantForAutofill="no"
+
+        />
+
+    <EditText
+        android:id="@+id/hw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:inputType="number"
+        android:hint="@string/homework_25"
+        android:textColor="#429E9B"
+        android:textColorHighlight="#04CDE6"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/medterm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:hint="@string/medterms_30"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textColor="#429E9B"
+        android:textColorHighlight="#04CDE6" />
+
+    <EditText
+        android:id="@+id/Final"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:hint="@string/finals_30"
+        android:inputType="number"
+        android:textColor="#429E9B"
+        android:textColorHighlight="#04CDE6"
+        android:autofillHints="finals_30" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#b2deec"
+            android:text="@string/Calculate" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="111dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="30dp"
+            android:backgroundTint="#b2deec"
+            android:text="@string/reset" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/Result"
+        android:layout_width="224dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="#b2deec"
+        android:text="@string/result"
+        android:textAlignment="center"
+        android:textColor="#794c74"
+        android:textSize="18sp" />
+
+</LinearLayout>
